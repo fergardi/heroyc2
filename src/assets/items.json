@@ -1,0 +1,68 @@
+{
+  "lbl_basic_sword" : {
+    "category" : "lbl_weapon",
+    "color" : "common",
+    "def" : 10,
+    "dex" : 8,
+    "int" : 10,
+    "name" : "lbl_basic_sword",
+    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/items%2Flbl_basic_sword.png?alt=media&token=5d80d78c-1ef6-455c-ae29-f77152183af4",
+    "str" : 10,
+    "vit" : 10
+  },
+  "lbl_iron_helmet" : {
+    "category" : "lbl_helm",
+    "color" : "set",
+    "def" : 23,
+    "dex" : 8,
+    "int" : 0,
+    "name" : "lbl_iron_helmet",
+    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/items%2Flbl_iron_helmet.png?alt=media&token=7658886a-3141-4452-bc77-7f7ab63a96d0",
+    "str" : 22,
+    "vit" : 67
+  },
+  "lbl_katana_sword" : {
+    "category" : "lbl_weapon",
+    "color" : "rare",
+    "def" : 9,
+    "dex" : 3,
+    "int" : 2,
+    "name" : "lbl_katana_sword",
+    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/items%2Flbl_katana.png?alt=media&token=1e1c9b21-c590-4197-9597-24bbf705e10c",
+    "str" : 33,
+    "vit" : 34
+  },
+  "lbl_wooden_shield" : {
+    "category" : "lbl_shield",
+    "color" : "legendary",
+    "def" : 76,
+    "dex" : 8,
+    "int" : 10,
+    "name" : "lbl_wooden_shield",
+    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/items%2Flbl_wooden_shield.png?alt=media&token=5cce3c1c-7478-4dd3-9e83-34946c4a72ae",
+    "str" : 10,
+    "vit" : 10
+  },
+  "lbl_leather_gloves" : {
+    "category" : "lbl_gloves",
+    "color" : "white",
+    "def" : 12,
+    "dex" : 8,
+    "int" : 10,
+    "name" : "lbl_leather_gloves",
+    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/items%2Flbl_leather_gloves.png?alt=media&token=6e3bf6fa-4edf-4551-b3e8-5b14d878b36c",
+    "str" : 3,
+    "vit" : 6
+  },
+  "lbl_force_ring" : {
+    "category" : "lbl_ring",
+    "color" : "set",
+    "def" : 2,
+    "dex" : 8,
+    "int" : 3,
+    "name" : "lbl_force_ring",
+    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/items%2Flbl_force_ring.png?alt=media&token=6c4186cd-c6da-4397-8366-85378dbf3035",
+    "str" : 3,
+    "vit" : 2
+  }
+}
