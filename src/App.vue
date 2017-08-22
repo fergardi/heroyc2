@@ -61,14 +61,12 @@
     margin 0
     height 100%
     width 100%
-    /*
     body
-      background url("https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/background.jpg?alt=media&token=e2a9fcd7-982a-416c-abe1-ff08b31f7073") no-repeat center center fixed
+      background url("https://s-media-cache-ak0.pinimg.com/originals/9f/4e/38/9f4e38d4634f2b584143be34d1324c0a.png") no-repeat center center fixed
       background-size cover
       box-sizing border-box
       user-select none !important
       z-index -9999
-    */
     .topbar
       position fixed
     .router
@@ -102,4 +100,8 @@
         border-radius 5px
         .mu-avatar-inner img
           border-radius 5px
+    .mu-appbar-title
+      display flex
+      justify-content center
+      align-items center
 </style>

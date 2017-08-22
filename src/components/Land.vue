@@ -167,7 +167,7 @@
   }
 </script>
 
-<style lang="stylus" scoped>
+<style lang="stylus">
   .land
     #map
       width 100vw

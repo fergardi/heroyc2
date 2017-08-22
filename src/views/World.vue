@@ -1,15 +1,15 @@
 <template lang="pug">
   .world
-    transition-group(name="nav", enter-active-class="animated fadeIn", tag="div", mode="out-in")
-      .map(v-show="navigation === 'lbl_map'", :key="1")
+    transition-group(name="nav", appear, enter-active-class="animated fadeIn", tag="div", mode="out-in")
+      .map(v-show="navigation === 'lbl_map'", key="1")
         land
-      .inventory(v-show="navigation === 'lbl_inventory'", :key="2")
+      .inventory(v-show="navigation === 'lbl_inventory'", key="2")
         inventory
-      .skills(v-show="navigation === 'lbl_skills'", :key="3")
+      .skills(v-show="navigation === 'lbl_skills'", key="3")
         magic
-      .bag(v-show="navigation === 'lbl_bag'", :key="4")
+      .bag(v-show="navigation === 'lbl_bag'", key="4")
         bag
-      .journal(v-show="navigation === 'lbl_journal'", :key="5")
+      .journal(v-show="navigation === 'lbl_journal'", key="5")
         journal
     mu-paper.navigation
       mu-bottom-nav(:value="navigation", shift, @change="navigate")
