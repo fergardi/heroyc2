@@ -1,5 +1,7 @@
 export default {
   es: {
+    lbl_skills: 'Magia',
+    lbl_journal: 'Diario',
     lbl_gloves: 'Guantes',
     lbl_ring: 'Anillo',
     lbl_menu: 'Menu',

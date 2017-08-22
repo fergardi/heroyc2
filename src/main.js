@@ -5,8 +5,8 @@ import VueFire from 'vuefire'
 import MuseUI from 'muse-ui'
 import '../node_modules/muse-ui/dist/muse-ui.css'
 // import '../node_modules/muse-ui/dist/theme-light.css'
-import '../node_modules/muse-ui/dist/theme-dark.css'
-// import '!style-loader!css-loader!less-loader!./css/custom.less'
+// import '../node_modules/muse-ui/dist/theme-dark.css'
+import '!style-loader!css-loader!less-loader!./css/custom.less'
 
 // UI
 Vue.use(MuseUI)

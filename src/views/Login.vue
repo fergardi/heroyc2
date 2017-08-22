@@ -4,8 +4,13 @@
 </template>
 
 <script>
+  import store from '../vuex/store'
+  
   export default {
-    name: 'Login'
+    name: 'Login',
+    created () {
+      store.commit('title', 'lbl_login')
+    }
   }
 </script>
 

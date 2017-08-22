@@ -61,6 +61,14 @@
     margin 0
     height 100%
     width 100%
+    /*
+    body
+      background url("https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/background.jpg?alt=media&token=e2a9fcd7-982a-416c-abe1-ff08b31f7073") no-repeat center center fixed
+      background-size cover
+      box-sizing border-box
+      user-select none !important
+      z-index -9999
+    */
     .topbar
       position fixed
     .router

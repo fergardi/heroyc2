@@ -1,5 +1,5 @@
 <template lang="pug">
-  .items
+  .bag
     .search
       mu-text-field(:label="translate('lbl_search')", v-model="search", :hintText="translate('lbl_search')", :fullWidth="false", type="search")
       mu-select-field(v-model="order", :label="translate('lbl_order')", :fullWidth="false")
@@ -14,7 +14,6 @@
         mu-sub-header {{ category.name | translate }}
         mu-list-item(v-for="item, index in category.items", :key="index", :title="translate(item.name)", :class="item.color")
           mu-avatar.item(slot="leftAvatar", :src="item.src")
-          mu-icon(slot="right", value="check")
           span(slot="describe")
             mu-badge.str(:content="item.str.toString() + ' ' + translate('lbl_str')")
             mu-badge.vit(:content="item.vit.toString() + ' ' + translate('lbl_vit')")
@@ -29,7 +28,7 @@
   import firebase from '../services/firebase'
 
   export default {
-    name: 'Items',
+    name: 'Bag',
     data () {
       return {
         search: '',
@@ -83,13 +82,13 @@
 </script>
 
 <style lang="stylus" scoped>
-  .items
+  .bag
     .search
       padding 5px 10px 0
       display flex
       flex-direction row
       justify-content center
-      align-items center
+      align-bag center
       flex-wrap nowrap
       .mu-text-field
         margin 0 5px
@@ -102,7 +101,7 @@
 
 <style lang="stylus">
   @import '../css/colors.styl'
-  .items
+  .bag
     .mu-avatar-inner img
       border 3px solid transparent
     .mu-item-title
