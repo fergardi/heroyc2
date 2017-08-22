@@ -104,14 +104,14 @@
         element.addEventListener('click', (e) => {
           console.log(key, marker)
           e.preventDefault()
-          e.stopPropagation()
+          // e.stopPropagation()
           return false
         })
         this.placesMarkers.push(new mapboxgl.Marker(element, {
           offset: [-width / 2, -height]
         })
         .setLngLat([marker.lng, marker.lat])
-        // .setPopup(new mapboxgl.Popup({ offset: 0 }).setHTML('<h3>' + marker.name + '</h3><p>' + marker.name + '</p>'))
+        .setPopup(new mapboxgl.Popup({ offset: 0 }).setHTML('<h3>' + marker.name + '</h3><p>' + marker.name + '</p>'))
         .addTo(this.map))
       },
       remove (key) {
@@ -134,7 +134,7 @@
       },
       clicked (map, event) {
         // this.$firebaseRefs.placesRef.child(this.placesRef[Math.floor(Math.random() * this.placesRef.length)]['.key']).remove()
-        this.$firebaseRefs.placesRef.push(this.fake(parseFloat(event.lngLat.lat), parseFloat(event.lngLat.lng)))
+        // this.$firebaseRefs.placesRef.push(this.fake(parseFloat(event.lngLat.lat), parseFloat(event.lngLat.lng)))
       },
       contains (extension, point) {
         return point.lng <= extension._ne.lng + 0.1 &&
