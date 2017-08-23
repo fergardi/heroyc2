@@ -15,11 +15,11 @@
         mu-list-item(v-for="item, index in category.items", :key="index", :title="translate(item.name)", :class="item.color")
           mu-avatar.item(slot="leftAvatar", :src="item.src")
           span(slot="describe")
-            mu-badge.str(:content="item.str.toString() + ' ' + translate('lbl_str')")
-            mu-badge.vit(:content="item.vit.toString() + ' ' + translate('lbl_vit')")
-            mu-badge.int(:content="item.int.toString() + ' ' + translate('lbl_int')")
-            mu-badge.dex(:content="item.dex.toString() + ' ' + translate('lbl_dex')")
-            mu-badge.def(:content="item.def.toString() + ' ' + translate('lbl_def')")
+            mu-badge.str(:content="item.str.toString() + ' ' + translate('lbl_str')", v-if="item.str > 0")
+            mu-badge.vit(:content="item.vit.toString() + ' ' + translate('lbl_vit')", v-if="item.vit > 0")
+            mu-badge.int(:content="item.int.toString() + ' ' + translate('lbl_int')", v-if="item.int > 0")
+            mu-badge.dex(:content="item.dex.toString() + ' ' + translate('lbl_dex')", v-if="item.dex > 0")
+            mu-badge.def(:content="item.def.toString() + ' ' + translate('lbl_def')", v-if="item.def > 0")
 </template>
 
 <script>

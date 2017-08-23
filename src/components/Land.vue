@@ -1,6 +1,17 @@
 <template lang="pug">
   .land
     mapbox#map(:access-token="token", :map-options="options", @map-load="loaded", @map-click="clicked", @map-move="moving")
+
+    mu-popup(position="left", :open="popup", @close="close")
+      mu-appbar(:title="selected.name")
+        mu-icon-button(slot="right", icon="close", @click="close")
+      mu-card
+        mu-card-header(:title="selected.name", subTitle="zone")
+          mu-avatar(:src="selected.src", slot="avatar")
+        mu-card-text {{ '' | lorem }}
+      mu-card-actions
+        mu-raised-button(:label="translate('lbl_ok')", primary, @click="close")
+        mu-raised-button(:label="translate('lbl_cancel')", secondary, @click="close")
 </template>
 
 <script>
@@ -18,6 +29,11 @@
     data () {
       return {
         map: null,
+        popup: false,
+        selected: {
+          src: '',
+          name: ''
+        },
         token: 'pk.eyJ1IjoiZmVyZ2FyZGkiLCJhIjoiY2lxdWl1enJiMDAzaWh4bTNwY3F6MnNwdiJ9.fPkJoOfrARPtZWCj1ehyCQ',
         options: {
           zoom: 12,
@@ -98,7 +114,8 @@
         shadow.className = 'shadow'
         element.appendChild(shadow)
         element.addEventListener('click', (e) => {
-          console.log(key, marker)
+          this.selected = marker
+          this.popup = true
           e.preventDefault()
           // e.stopPropagation()
           return false
@@ -107,7 +124,7 @@
           offset: [-width / 2, -height]
         })
         .setLngLat([marker.lng, marker.lat])
-        .setPopup(new mapboxgl.Popup({ offset: 0 }).setHTML('<h3>' + marker.name + '</h3><p>' + marker.name + '</p>'))
+        // .setPopup(new mapboxgl.Popup({ offset: 0 }).setHTML('<h3>' + marker.name + '</h3><p>' + marker.name + '</p>'))
         .addTo(this.map))
       },
       remove (key) {
@@ -138,7 +155,7 @@
           point.lng >= extension._sw.lng - 0.1 &&
           point.lat >= extension._sw.lat - 0.1
       },
-      close (geolocation, point) {
+      near (geolocation, point) {
         return Math.abs(geolocation.lng) - Math.abs(point.lng) <= 0.01 &&
           Math.abs(geolocation.lat) - Math.abs(point.lat) <= 0.01
       },
@@ -148,7 +165,7 @@
             m._element.classList.add('invisible')
           } else {
             m._element.classList.remove('invisible')
-            if (!this.close(this.position, m.getLngLat())) {
+            if (!this.near(this.position, m.getLngLat())) {
               m._element.classList.add('close')
             } else {
               m._element.classList.remove('close')
@@ -158,6 +175,9 @@
       },
       translate (label) {
         return i18n[store.state.lang][label] || label
+      },
+      close () {
+        this.popup = false
       }
     }
   }
@@ -184,4 +204,12 @@
         opacity .3
         position absolute
         bottom -10px
+  .mu-popup-left
+    width 100%
+    .mu-card-actions
+      display flex
+      justify-content center
+      align-items center
+      button + button
+        margin-left 5px
 </style>

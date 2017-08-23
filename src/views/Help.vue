@@ -1,6 +1,9 @@
 <template lang="pug">
   .help
-    p help
+    mu-sub-header Introducción
+    mu-content-block {{ '' | ipsum }}
+    mu-sub-header Introducción
+    mu-content-block {{ '' | ipsum }}
 </template>
 
 <script>
@@ -15,6 +18,4 @@
 </script>
 
 <style lang="stylus">
-  .help
-    padding 10px
 </style>

@@ -1,68 +1,57 @@
 {
-  "lbl_basic_sword" : {
-    "category" : "lbl_weapon",
-    "color" : "common",
-    "def" : 10,
-    "dex" : 8,
-    "int" : 10,
-    "name" : "lbl_basic_sword",
-    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/items%2Flbl_basic_sword.png?alt=media&token=5d80d78c-1ef6-455c-ae29-f77152183af4",
-    "str" : 10,
-    "vit" : 10
-  },
-  "lbl_iron_helmet" : {
-    "category" : "lbl_helm",
-    "color" : "set",
-    "def" : 23,
-    "dex" : 8,
-    "int" : 0,
-    "name" : "lbl_iron_helmet",
-    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/items%2Flbl_iron_helmet.png?alt=media&token=7658886a-3141-4452-bc77-7f7ab63a96d0",
-    "str" : 22,
-    "vit" : 67
-  },
-  "lbl_katana_sword" : {
-    "category" : "lbl_weapon",
-    "color" : "rare",
-    "def" : 9,
-    "dex" : 3,
-    "int" : 2,
-    "name" : "lbl_katana_sword",
-    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/items%2Flbl_katana.png?alt=media&token=1e1c9b21-c590-4197-9597-24bbf705e10c",
-    "str" : 33,
-    "vit" : 34
-  },
-  "lbl_wooden_shield" : {
-    "category" : "lbl_shield",
+  "lbl_dex_potion" : {
+    "category" : "lbl_potion",
     "color" : "legendary",
-    "def" : 76,
-    "dex" : 8,
+    "def" : 0,
+    "dex" : 10,
+    "int" : 0,
+    "name" : "lbl_dex_potion",
+    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/items%2Flbl_dex_potion.png?alt=media&token=186aab9f-bb00-4805-b155-a7919fbdd3bf",
+    "str" : 0,
+    "vit" : 0
+  },
+  "lbl_def_potion" : {
+    "category" : "lbl_potion",
+    "color" : "legendary",
+    "def" : 10,
+    "dex" : 0,
+    "int" : 0,
+    "name" : "lbl_def_potion",
+    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/items%2Flbl_def_potion.png?alt=media&token=1aa4be8c-1187-4391-b1be-f774f5692c70",
+    "str" : 0,
+    "vit" : 0
+  },
+  "lbl_int_potion" : {
+    "category" : "lbl_potion",
+    "color" : "legendary",
+    "def" :0,
+    "dex" : 0,
     "int" : 10,
-    "name" : "lbl_wooden_shield",
-    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/items%2Flbl_wooden_shield.png?alt=media&token=5cce3c1c-7478-4dd3-9e83-34946c4a72ae",
-    "str" : 10,
+    "name" : "lbl_int_potion",
+    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/items%2Flbl_int_potion.png?alt=media&token=0c87556c-9813-4d48-b521-9ceb9895a5ef",
+    "str" : 0,
+    "vit" : 0
+  },
+  "lbl_vit_potion" : {
+    "category" : "lbl_potion",
+    "color" : "legendary",
+    "def" : 0,
+    "dex" : 0,
+    "int" : 0,
+    "name" : "lbl_vit_potion",
+    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/items%2Flbl_vit_potion.png?alt=media&token=c2ac0d9b-f1f6-48da-8c34-9d21689ac38b",
+    "str" : 0,
     "vit" : 10
   },
-  "lbl_leather_gloves" : {
-    "category" : "lbl_gloves",
-    "color" : "white",
-    "def" : 12,
-    "dex" : 8,
-    "int" : 10,
-    "name" : "lbl_leather_gloves",
-    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/items%2Flbl_leather_gloves.png?alt=media&token=6e3bf6fa-4edf-4551-b3e8-5b14d878b36c",
-    "str" : 3,
-    "vit" : 6
-  },
-  "lbl_force_ring" : {
-    "category" : "lbl_ring",
-    "color" : "set",
-    "def" : 2,
-    "dex" : 8,
-    "int" : 3,
-    "name" : "lbl_force_ring",
-    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/items%2Flbl_force_ring.png?alt=media&token=6c4186cd-c6da-4397-8366-85378dbf3035",
-    "str" : 3,
-    "vit" : 2
+  "lbl_str_potion" : {
+    "category" : "lbl_potion",
+    "color" : "legendary",
+    "def" : 0,
+    "dex" : 0,
+    "int" : 0,
+    "name" : "lbl_str_potion",
+    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/items%2Flbl_str_potion.png?alt=media&token=667620dc-7e4b-469a-bca7-90154079ef44",
+    "str" : 10,
+    "vit" : 0
   }
 }

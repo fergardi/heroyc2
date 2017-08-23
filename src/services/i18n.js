@@ -1,5 +1,13 @@
 export default {
   es: {
+    lbl_ok: 'Ok',
+    lbl_cancel: 'Cancelar',
+    lbl_potion: 'Poción',
+    lbl_dex_potion: 'Poción de Destreza',
+    lbl_int_potion: 'Poción de Inteligencia',
+    lbl_str_potion: 'Poción de Fuerza',
+    lbl_def_potion: 'Poción de Defensa',
+    lbl_vit_potion: 'Poción de Vitalidad',
     lbl_skills: 'Magia',
     lbl_journal: 'Diario',
     lbl_gloves: 'Guantes',

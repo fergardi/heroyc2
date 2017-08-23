@@ -1,0 +1,68 @@
+{
+  "lbl_basic_sword" : {
+    "category" : "lbl_weapon",
+    "color" : "common",
+    "def" : 10,
+    "dex" : 8,
+    "int" : 10,
+    "name" : "lbl_basic_sword",
+    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/equipments%2Flbl_basic_sword.png?alt=media&token=74fe6047-12ca-485c-b373-ed8442ef7b23",
+    "str" : 10,
+    "vit" : 10
+  },
+  "lbl_iron_helmet" : {
+    "category" : "lbl_helm",
+    "color" : "set",
+    "def" : 23,
+    "dex" : 8,
+    "int" : 0,
+    "name" : "lbl_iron_helmet",
+    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/equipments%2Flbl_force_ring.png?alt=media&token=03a7bace-81f9-40fe-983a-df3f3f6921f9",
+    "str" : 22,
+    "vit" : 67
+  },
+  "lbl_katana_sword" : {
+    "category" : "lbl_weapon",
+    "color" : "rare",
+    "def" : 9,
+    "dex" : 3,
+    "int" : 2,
+    "name" : "lbl_katana_sword",
+    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/equipments%2Flbl_iron_helmet.png?alt=media&token=e8099ca7-472c-457d-82f4-5eb789d130b2",
+    "str" : 33,
+    "vit" : 34
+  },
+  "lbl_wooden_shield" : {
+    "category" : "lbl_shield",
+    "color" : "legendary",
+    "def" : 76,
+    "dex" : 8,
+    "int" : 10,
+    "name" : "lbl_wooden_shield",
+    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/equipments%2Flbl_katana.png?alt=media&token=4348fa2e-f16f-4de3-9985-1d2ea39bddb8",
+    "str" : 10,
+    "vit" : 10
+  },
+  "lbl_leather_gloves" : {
+    "category" : "lbl_gloves",
+    "color" : "white",
+    "def" : 12,
+    "dex" : 8,
+    "int" : 10,
+    "name" : "lbl_leather_gloves",
+    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/equipments%2Flbl_leather_gloves.png?alt=media&token=e68b6c74-6926-4097-b6da-ed07d6ab9bd0",
+    "str" : 3,
+    "vit" : 6
+  },
+  "lbl_force_ring" : {
+    "category" : "lbl_ring",
+    "color" : "set",
+    "def" : 2,
+    "dex" : 8,
+    "int" : 3,
+    "name" : "lbl_force_ring",
+    "src" : "https://firebasestorage.googleapis.com/v0/b/heroyc-afe1f.appspot.com/o/equipments%2Flbl_wooden_shield.png?alt=media&token=35a6bd19-16cd-43ab-8827-6b27b163a971",
+    "str" : 3,
+    "vit" : 2
+  }
+}
