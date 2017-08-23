@@ -15,9 +15,6 @@
     components: {
       'mapbox': Mapbox
     },
-    created () {
-      console.log('hola')
-    },
     data () {
       return {
         map: null,
@@ -73,7 +70,6 @@
     },
     methods: {
       loaded (map) {
-        console.log('hola')
         this.map = map
         setTimeout(() => {
           this.ready()

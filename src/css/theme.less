@@ -1,28 +1,31 @@
 @import "~muse-ui/less/vars.less"; // default basic variable
 
+@fontFamily: Roboto, Lato, sans-serif;  // font
+
 // primary color and accent color
 @primaryColor: @lightBlue;           // primary color
-@darkerPrimaryColor: @lightBlue700;  // darker primary color
-@lighterPrimaryColor: @grey400;      // lighter primary color
-@accentColor: @fullBlack;             // accent color
-@darkerAccentColor: @fullBlack;        // darker accent color
-@lighterAccentColor: @fullBlack;       // lighter accent color
+@darkerPrimaryColor: @primaryColor;  // darker primary color
+@lighterPrimaryColor: @primaryColor;      // lighter primary color
+@accentColor: @primaryColor;             // accent color
+@darkerAccentColor: @primaryColor;        // darker accent color
+@lighterAccentColor: @primaryColor;       // lighter accent color
 
 // text color
 @textColor: @fullWhite;
 @secondaryTextColor: @fullWhite;
 @alternateTextColor: @fullWhite;
-@borderColor: @fullWhite;
+@borderColor: fade(@fullWhite, 50%);
 @disabledColor: fade(@fullWhite, 50%);
 
 // background
-@backgroundColor: @fullWhite;           // background color
-@appbarBackgroundColor: @grey100; // useless in the appbar component
-@dialogBackgroundColor: @primaryColor; // dialogs、 cards、 paper background
+@backgroundColor: @blueGrey900;           // background color
+@statusBarBackgroundColor: @blueGrey900; // useless
+@appbarBackgroundColor: @blueGrey900; // useless in the appbar component
+@dialogBackgroundColor: @blueGrey900; // dialogs、 cards、 paper background
 
 // icon color
-@activeIconColor: fade(@fullBlack, 54%);
-@inActiveIconColor: fade(@fullBlack, 38%);
+@activeIconColor: fade(@fullWhite, 50%);
+@inActiveIconColor: fade(@fullWhite, 50%);
 
 @import "~muse-ui/less/theme-vars.less";  // default component variable
 
@@ -36,5 +39,7 @@
 
 @tableRowHoverBackgroundColor: fade(@textColor, 10%);
 @tableRowSelectedBackgroundColor: fade(@textColor, 5%);
+
+@listLeftIconColor: @primaryColor;
 
 @import "~muse-ui/less/theme.less"; // style related to theme
