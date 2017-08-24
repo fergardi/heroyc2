@@ -3,17 +3,20 @@
     transition-group(name="nav", appear, enter-active-class="animated fadeIn", tag="div", mode="out-in")
       .map(v-show="navigation === 'lbl_map'", key="1")
         land
-      .inventory(v-show="navigation === 'lbl_inventory'", key="2")
+      .character(v-show="navigation === 'lbl_character'", key="2")
+        character
+      .inventory(v-show="navigation === 'lbl_inventory'", key="3")
         inventory
-      .skills(v-show="navigation === 'lbl_skills'", key="3")
+      .skills(v-show="navigation === 'lbl_skills'", key="4")
         magic
-      .bag(v-show="navigation === 'lbl_bag'", key="4")
+      .bag(v-show="navigation === 'lbl_bag'", key="5")
         bag
-      .journal(v-show="navigation === 'lbl_journal'", key="5")
+      .journal(v-show="navigation === 'lbl_journal'", key="6")
         journal
     mu-paper.navigation
       mu-bottom-nav(:value="navigation", shift, @change="navigate")
         mu-bottom-nav-item(value="lbl_map", :title="translate('lbl_map')", icon="room")
+        mu-bottom-nav-item(value="lbl_character", :title="translate('lbl_character')", icon="person")
         mu-bottom-nav-item(value="lbl_inventory", :title="translate('lbl_inventory')", icon="done_all")
         mu-bottom-nav-item(value="lbl_skills", :title="translate('lbl_skills')", icon="star")
         mu-bottom-nav-item(value="lbl_bag", :title="translate('lbl_bag')", icon="shopping_basket")
@@ -29,6 +32,7 @@
   import Land from '../components/Land'
   import Bag from '../components/Bag'
   import Journal from '../components/Journal'
+  import Character from '../components/Character'
 
   export default {
     name: 'world',
@@ -37,7 +41,8 @@
       'magic': Magic,
       'land': Land,
       'bag': Bag,
-      'journal': Journal
+      'journal': Journal,
+      'character': Character
     },
     data () {
       return {

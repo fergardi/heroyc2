@@ -8,7 +8,7 @@
       mu-card
         mu-card-header(:title="selected.name", subTitle="zone")
           mu-avatar(:src="selected.src", slot="avatar")
-        mu-card-text {{ '' | lorem }}
+        mu-card-text {{ '' | ipsum }}
       mu-card-actions
         mu-raised-button(:label="translate('lbl_ok')", primary, @click="close")
         mu-raised-button(:label="translate('lbl_cancel')", secondary, @click="close")

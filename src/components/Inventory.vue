@@ -12,15 +12,16 @@
     mu-list.list
       template(v-for="category in categorized")
         mu-sub-header {{ category.name | translate }}
-        mu-list-item(v-for="item, index in category.items", :key="index", :title="translate(item.name)", :class="item.color")
-          mu-avatar.item(slot="leftAvatar", :src="item.src")
-          mu-icon(slot="right", value="check")
-          span(slot="describe")
-            mu-badge.str(:content="item.str.toString() + ' ' + translate('lbl_str')")
-            mu-badge.vit(:content="item.vit.toString() + ' ' + translate('lbl_vit')")
-            mu-badge.int(:content="item.int.toString() + ' ' + translate('lbl_int')")
-            mu-badge.dex(:content="item.dex.toString() + ' ' + translate('lbl_dex')")
-            mu-badge.def(:content="item.def.toString() + ' ' + translate('lbl_def')")
+        transition-group(name="move" tag="div")
+          mu-list-item(v-for="item, index in category.items", :key="index", :title="translate(item.name)", :class="item.color")
+            mu-avatar.item(slot="leftAvatar", :src="item.src")
+            mu-icon(slot="right", value="check")
+            span(slot="describe")
+              mu-badge.str(:content="item.str.toString() + ' ' + translate('lbl_str')")
+              mu-badge.vit(:content="item.vit.toString() + ' ' + translate('lbl_vit')")
+              mu-badge.int(:content="item.int.toString() + ' ' + translate('lbl_int')")
+              mu-badge.dex(:content="item.dex.toString() + ' ' + translate('lbl_dex')")
+              mu-badge.def(:content="item.def.toString() + ' ' + translate('lbl_def')")
 </template>
 
 <script>
@@ -98,6 +99,8 @@
       overflow-y auto
       height 100%
       margin-bottom 56px
+      &.move 
+        transition transform 1s
 </style>
 
 <style lang="stylus">

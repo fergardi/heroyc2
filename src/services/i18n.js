@@ -1,5 +1,6 @@
 export default {
   es: {
+    lbl_character: 'Personaje',
     lbl_ok: 'Ok',
     lbl_cancel: 'Cancelar',
     lbl_potion: 'Poción',
